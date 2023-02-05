@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Application Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class=" text-center mt-5 ">
+
+            <h1>Application Form</h1>
+
+
+        </div>
+
+
+        <div class="row ">
+            <div class="col-lg-10 mx-auto">
+                <div class="card mt-2 mx-auto bg-light">
+                    <div class="card-body bg-light">
+
+                        <div class="container">
+                            <form id="contact-form" role="form">
+
+
+
+                                <div class="controls">
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_name">Name *</label>
+                                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Name *" required="required" data-error="Firstname is required.">
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_lastname">Email Address *</label>
+                                                <input id="form_lastname" type="email" name="surname" class="form-control" placeholder="Email *" required="required" data-error="Lastname is required.">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_email">Tel/ Mobile Number *</label>
+                                                <input id="form_email" type="email" name="email" class="form-control" placeholder="Tel/ Mobile Number *" required="required" data-error="Valid email is required.">
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_need">Nationality *</label>
+                                                <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your country.">
+                                                    <option value="" selected disabled>--Select Your Nationality--</option>
+                                                    <option >UK</option>
+                                                    <option >USA</option>
+                                                    <option >Canada</option>
+                                                    <option >Australia</option>
+                                                </select>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_message">Address *</label>
+                                                <textarea id="form_message" name="message" class="form-control" placeholder="Please enter your address." rows="2" required="required" data-error="Please, leave us a message."></textarea>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_message">Previus Address * <small>(If you are not 5 years at
+                                                    current address)</small></label>
+                                                <textarea id="form_message" name="message" class="form-control" placeholder="Please enter your previus address." rows="2" required="required" data-error="Please, leave us a message."></textarea>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="form_email">Have you started an undergraduate or postgraduate course of higher education in any country since leaving school? *</label>
+                                                <div class="">
+                                                    <label class="radio-container mr-3">Yes
+                                                        <input type="radio" checked="checked" name="exist2">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="radio-container">No
+                                                        <input type="radio" name="exist2">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_message">Date of Birth * </label>
+                                                <input class="form-control" id="" type="date" name="DOB">
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_message">Date of entry in the Uk? * </label>
+                                                <input class="form-control" id="" type="date" name="DOB">
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_email">Have you ever study in uk? *</label>
+                                                <div class="">
+                                                    <label class="radio-container mr-3">Yes
+                                                        <input type="radio" checked="checked" name="exist">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="radio-container">No
+                                                        <input type="radio" name="exist">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_email">Have you ever apply for student finance? *</label>
+                                                <div class="">
+                                                    <label class="radio-container mr-3">Yes
+                                                        <input type="radio" checked="checked" name="exist1">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="radio-container">No
+                                                        <input type="radio" name="exist1">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="form_email">Interest Course *</label>
+                                                <div class="">
+                                                    <input class="form-control" type="text" placeholder="Type your course name here">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <p>Accept all our privacy & policy?</p>
+                                            <small>
+                                                <b>Data Protection:</b> I agree to the Boost Education Service Ltd processing personal data contained in this form. I agree to the processing of such data for any purposes connected with my studies or my health and safety whilst on the premises or for any legitimate reason including communication with me following the completion of my studies. In addition, I agree to the Boost Education Service Ltd processing personal data described as Special Category Data as defined under the General Data Protection Regulation(GDPR), such processing to be undertaken for any purposes as indicated in the declaration above. <br><br>
+
+<b>Declaration:</b> I confirm that the information given on this form is true, complete and accurate and that none of the information requested or other material information has been omitted. I accept that if it is discovered that I have supplied false, inaccurate or misleading information, Boost Education Service reserves the right to cancel my application, withdraw its offer of a place or terminate attendance at the University and I shall have no claim against Boost Education Service in relation thereto.
+                                            </small>
+                                            <div class="pt-2">
+                                                <label class="radio-container mr-3">Yes
+                                                    <input type="radio" checked="checked" name="existbtn">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="radio-container">No
+                                                    <input type="radio" name="existbtn">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12">
+
+                                            <input type="submit" class="btn btn-success btn-send  pt-3 d-block m-auto
+                            " value="Apply now">
+
+                                        </div>
+
+
+                                    </div>
+
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- /.8 -->
+
+            </div>
+            <!-- /.row-->
+
+        </div>
+    </div>
+
+</body>
+
+</html>
