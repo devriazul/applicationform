@@ -303,7 +303,7 @@
                         interested_subject_ans: $('#interested_subject_ans').val(),
                         
                     };
-                    $.post("http://127.0.0.1:8000/api/create-lead-uk/", dataval, function(data, status) {
+                    $.post("https://staging-api.theleadlibrary.com/api/create-lead-uk/", dataval, function(data, status) {
                         console.log(data);
                         if (data['result']['key'] === 101) {
                             $('#submit-btn').prop('disabled', false);
